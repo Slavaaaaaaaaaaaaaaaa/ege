@@ -32,7 +32,7 @@
 #     print( f'Now on party {len(guests)} humans: ', guests )
 #     x = input( 'human come on party or leave?' )
 #     if x == 'come':
-#         name = int( input( 'Input name:' ) )
+#         name = input( 'Input name:' )
 #         if len(guests) < 6:
 #             print( f'hi, {name}' )
 #             guests.append(name)
@@ -42,8 +42,9 @@
 #         name = input( 'Input name: ' )
 #         print(f'bye, {name}')
 #         guests.remove(name)
-#     else:
+#     elif x == "party ended":
 #         print( 'party ended, all go to sleep' )
+#         break
 
 
 # spisak_1 = [int( input( f'input {i} number' ) ) for i in range(1,3+1)]
@@ -64,26 +65,20 @@
 # print( spisak_1 )
 
 
-main = [1, 5, 3]
-trash_1 = [1, 5, 1, 5]
-trash_2 = [1, 3, 1, 5, 3, 3]
-main.extend(trash_1)
-
-number = main.count(5)
-
-print(number)
-completed_main = []
-
-for i in main:
-    if i != 5:
-        completed_main.append(i)
-
-completed_main.extend(trash_2)
-number = 0
-
-for i in completed_main:
-    if i == 3:
-        number += 1
-
-print(number)
-print(completed_main)
+# main = [1, 5, 3]
+# trash_1 = [1, 5, 1, 5]
+# trash_2 = [1, 3, 1, 5, 3, 3]
+# main.extend(trash_1)
+#
+# number = main.count(5)
+#
+# print(number)
+#
+# while main.count(5) > 0:
+#     main.remove(5)
+#
+# main.extend(trash_2)
+# number = main.count(3)
+#
+# print(number)
+# print(main)
